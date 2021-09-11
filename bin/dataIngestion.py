@@ -8,7 +8,7 @@ import os
 
 class Ingest:
     
-    def findAllClass(basePath):
+    def findAllClass(self,basePath):
         """To find the class names.
         
         Input:
@@ -19,7 +19,7 @@ class Ingest:
         classArr = os.listdir(basePath)
         return classArr
     
-    def readContentFromDir(basePath,className):
+    def readContentFromDir(self,basePath,className):
         
         classDir = os.path.join(basePath,className)
         files = os.listdir(classDir)
@@ -27,9 +27,15 @@ class Ingest:
         for file in files:
             with open(os.path.join(classDir,file)) as fl:
                 content = fl.read()
-            contentList.append(content)
-        
+            contentList.append(content)        
         return contentList
     
-    def collectData():
-        pass
+    def collectData(self,basePath):
+        
+        classNames = self.findAllClass(basePath)
+        finalData = {}
+        for className in classNames:
+            contentList = self.readContentFromDir(basePath,className)
+            finalData[className] = contentList
+        return finalData
+        
