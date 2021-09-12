@@ -51,7 +51,8 @@ def getData():
     finalData = ingestObj.collectData(basePath)
     return json.dumps(finalData)
 
-app.run('0.0.0.0',80)
+if __name__=='__main__':
+    app.run('0.0.0.0',80)
 
 
 
