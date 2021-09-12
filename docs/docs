@@ -1,0 +1,35 @@
+Deployment
+-- aws
+	-- account creation
+	-- ec2 creation
+	
+Open a python editor
+	- Pycharm
+	- VSCode
+	- Spyder
+	- Sublime
+
+Github
+	- acount created
+	- git installed on our devloper system
+
+Coding practices
+	- modular codes
+	- use of classes and functions
+	- project structure
+	- variable/def/classes/modules naming
+	- pep 8 and pep 257
+	- You should always have a plan
+		- findALl classes
+		- getContent from each classes
+		- Collect the data and dump into csv
+	- use virtual env
+	
+Api development
+	- Flask
+	- install postman
+	
+git init
+git add .
+git commit -m "some message"
+	
