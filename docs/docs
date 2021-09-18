@@ -32,4 +32,21 @@ Api development
 git init
 git add .
 git commit -m "some message"
+
+ssh -i locationofpemfile ubuntu@ipaddress
+sudo apt-get update
+sudo apt-get install python3-pip
+pip3 install flask
+ls -- to list dir
+pwd -- current wd
+mkdir dirname --- create new dir
+cd dirname -- to change dir
+cd .. --- to go one dir up
+git clone https://github.com/saz2nitk/GADep1109.git
+
+when we make REST api call, it is an http request
+
+sudo su
+scp -i locationofpemfile source dest
+ scp -i /c/Users/saz2n/Downloads/ga1209test.pem /d/Academia/Learning/GreyAtom/GADep1109/
 	
